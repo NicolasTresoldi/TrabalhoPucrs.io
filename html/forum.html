@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Forum</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <div class="cabecalho1">
+                <a class="title" href="../index.html">Trabalho PUCRS</a>
+            </div>
+
+            <div class="cabecalho2">
+                <a href="integrantes.html">Equipe</a>
+                <a href="sobre.html">Sobre</a>
+            </div>
+        </nav>
+        <div class="linha"></div>
+    </header>
+
+    <main>
+        <section id="question-form">
+            <h2>Qual a sua duvida?</h2>
+            <form id="new-question-form">
+                <label for="question-title">Título:</label>
+                <input type="text" id="question-title" name="question-title" required>
+                
+                <label for="question-body">Pergunta:</label>
+                <textarea id="question-body" name="question-body" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="response-form" style="display: none;">
+            <h2>Responder à Pergunta</h2>
+            <form id="response-question-form">
+                <label for="response-body">Resposta:</label>
+                <textarea id="response-body" name="response-body" required></textarea>
+                
+                <button type="submit">Enviar Resposta</button>
+            </form>
+        </section>
+
+        <section id="questions-list">
+            <h2>Perguntas Recentes</h2>
+            <ul id="questions">
+                
+            </ul>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

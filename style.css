@@ -1,0 +1,446 @@
+/* CSS Geral */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Radio";
+}
+
+@font-face {
+    font-family: "Radio";
+    src: url("font/RadioCanadaBig-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: rgba(224, 224, 224, 0.329);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+/* NAV BAR */
+
+.linha {
+    border-bottom: 1px solid #00000028;
+    margin-bottom: 20px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.cabecalho1 a {
+    color: black;
+    padding: 25px;
+}
+
+.cabecalho2 a {
+    color: black;
+    padding: 0px 20px 25px 0px;
+}
+
+
+/* IMAGEM MENTE FEMENINA  */
+#pucrs {
+    width: 800px;
+    max-width: 100%;
+    max-height: 350px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 13px;
+}
+
+
+/* TEXTO PRINCIPAL */
+.container {
+    flex-direction: row;
+    text-align: center;
+}
+
+.intro {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;   
+}
+
+.texto-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto-intro p {
+    display: flex;
+    margin: 5px 0;
+    
+    text-align: left;
+    max-width: 600px;
+}
+
+#id-2 {
+    text-align: center;
+}
+
+
+/* BOTOES DE CONTEUDO */
+.intro {
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.intro button {
+    background-color: #80868042;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px; 
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 12px;
+    max-width: 33vh;
+    transition: transform 0.3s ease;
+}
+
+.img-luto img {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.img-luto:hover {
+    transform: translateY(-10px);
+}
+
+.intro p {
+    width: 400px;
+    max-width: 100%;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+/* CSS INTEGRANTES */
+
+.containerIntegrantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item { 
+    display: flex;
+    padding: 20px;
+    margin: 0 10px;
+    align-items: center;
+    flex-direction: row;
+}
+
+#isa img {
+    width: 170px;
+    height: 180px;
+}
+
+#fernanda img {
+    width: 180px;
+    height: 190px;
+}
+
+#betina img {
+    width: 170px;
+    height: 190px;
+}
+
+#sara img {
+    width: 180px;
+    height: 190px;
+}
+
+.item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.item img { 
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.space {
+    margin-left: 170px;
+}
+
+/* CSS FORM */
+
+main {
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#question-form {
+    margin-bottom: 20px;
+}
+
+#new-question-form {
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto; 
+    text-align: left;
+}
+
+#question-form, #questions-list {
+    margin-bottom: 2rem;
+}
+
+#question-body {
+    height: 200px;
+}
+
+#questions-list {
+    display: inline-block;
+    text-align: left;
+}
+
+form label, form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form button {
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    background-color: #ec6ee2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#new-question-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    display: block;
+    margin: 20px auto;
+}
+
+form button:hover {
+    background-color: #b359b9;
+}
+
+#questions {
+    list-style-type: none;
+    padding: 0;
+}
+
+#questions li {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+/* PERSONALIZAR BOTAO RESPONDER */
+
+.custom-reply-btn {
+    background-color: #ec6ee2;
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* responsivo index */
+@media only screen and (min-width: 1440px) and (max-width: 1680px),
+       only screen and (min-width: 900px) and (max-width: 1050px),
+       (max-aspect-ratio: 16/10) {
+    .container {
+        max-width: 100%;
+    }
+
+    .intro {
+        flex: 1;
+        padding: 5px;
+        max-width: calc(100% - 25px);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .intro p {
+        width: auto;
+    }
+
+    
+}
+
+@media only screen and (max-width: 723px) {
+    
+    .cabecalho1 a {
+        padding: 10px;
+    }
+
+    .cabecalho2 a {
+        padding: 0 10px;
+    }
+
+    .intro {
+        padding: 10px;
+    }
+
+    .intro p {
+        width: 450px;
+        max-width: 100%;
+    }
+
+    #pucrs {
+        border-radius: 0;
+    }
+
+    .intro button {
+        background-color: #80868038;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; 
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        max-width: 95%;
+    }
+    
+    .img-luto img {
+        vertical-align: middle;
+        margin-right: 8px;
+        width: 250px;
+        height: 250px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px),
+       only screen and (min-width: 724px) and (max-width: 2000px) {
+
+    .intro {
+        padding: 20px;
+    }
+
+    .intro p {
+        width: auto;
+    }
+
+    .intro button{
+        background-color: #80868042;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px; 
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        max-width: 70%;
+    }
+    
+    .img-luto img {
+        vertical-align: middle;
+        margin-right: 8px;
+        width: 250px;
+        height: 250px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* responsivo integrantes */
+@media only screen and (max-width: 608px),
+       (max-aspect-ratio: 16/10) {
+    .space {
+        margin-left: 0;
+    }
+
+    .absd p {
+        font-size: 14px;
+    }
+
+    .item img { 
+        border-radius: 20px;
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .texto-intro p {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+}
+
+/* responsivo form */
+
+@media only screen and (max-width: 608px) {
+    main {
+        width: 75%;
+    }
+    #new-question-form {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1680px) {
+    main {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1050px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    main {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1680px) and (max-width: 1920px) {
+    main {
+        width: 65%;
+    }
+}
