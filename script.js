@@ -116,3 +116,38 @@ document.addEventListener('DOMContentLoaded', () => {
     loadQuestions();
     
 });
+
+
+/* Função para alternar a visibilidade do pop-out */
+function togglePopout(popoutId) {
+    // Fecha todos os pop-outs abertos
+    var popouts = document.getElementsByClassName("popout-content");
+    for (var i = 0; i < popouts.length; i++) {
+        if (popouts[i].classList.contains('show')) {
+            popouts[i].classList.remove('show');
+            setTimeout(function(popout) {
+                popout.style.display = 'none';
+            }, 300, popouts[i]); // Atraso para permitir que a transição termine
+        }
+    }
+
+    // Abre o novo pop-out
+    var popout = document.getElementById(popoutId);
+    popout.style.display = 'block';
+    setTimeout(function() {
+        popout.classList.add('show');
+    }, 10); // Atraso pequeno para permitir que o display seja aplicado antes da transição
+}
+
+/* Fecha o pop-out se o usuário clicar fora dele */
+window.onclick = function(event) {
+    var popouts = document.getElementsByClassName("popout-content");
+    for (var i = 0; i < popouts.length; i++) {
+        if (!event.target.closest('.img-luto') && !event.target.closest('.popout-inner')) {
+            popouts[i].classList.remove("show");
+            setTimeout(function(popout) {
+                popout.style.display = 'none';
+            }, 300, popouts[i]); // Atraso para permitir que a transição termine
+        }
+    }
+}

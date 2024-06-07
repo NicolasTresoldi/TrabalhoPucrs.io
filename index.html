@@ -65,42 +65,81 @@
             </p>
         </div>
 
+        <!-- CONTEUDO POPOUT -->
+
         <div class="intro">
-            <button class="img-luto" onclick="redirecionar()">
+            <button class="img-luto" onclick="togglePopout('popout1')">
+                <img src="images/luto.jpeg" alt="Luto">
+                <p>Luto</p>
+            </button>
+
+            <button class="img-luto" onclick="togglePopout('popout2')">
+                <img src="images/maternidade.jpeg" alt="Another">
+                <p>Maternidade</p>
+            </button>
+
+            <button class="img-luto" onclick="togglePopout('popout3')">
+                <img src="images/meno-pausa.jpeg" alt="Example">
+                <p>Menopausa</p>
+            </button>
+
+            <button class="img-luto" onclick="togglePopout('popout4')">
+                <img src="images/trauma.jpeg" alt="Sample">
+                <p>Trauma</p>
+            </button>
+
+        </div>
+
+        <!-- POPOUT -->
+
+        <div id="popout1" class="popout-content">
+            <div class="popout-inner">
                 <img src="images/luto.jpeg" alt="">
-                <p>O luto é um processo emocional de dor e adaptação que ocorre após a perda de alguém ou algo significativo. Ele envolve uma variedade de sentimentos, como tristeza, raiva e confusão, e é uma experiência única para cada indivíduo.</p>
-            </button>   
+                <div class="scrollable-content">
+                    <p>
+                        ainda sem texto
+                    </p>
+                </div>
+            </div>
         </div>
-
-        <div class="intro">
-            <button class="img-luto" onclick="redirecionar2()">
+        <div id="popout2" class="popout-content">
+            <div class="popout-inner">
                 <img src="images/maternidade.jpeg" alt="">
-                <p>
-                    Olá, sou a Psicóloga Fernanda, e é um prazer recebê-la neste espaço dedicado ao autocuidado e ao crescimento pessoal durante a jornada da maternidade. Com uma especialização em acompanhar mulheres durante a gravidez e na transição para a maternidade, meu objetivo é oferecer um suporte integral, ajudando-as a explorar e compreender suas emoções, desafios e fortalezas nesse período único da vida.
+                <div class="scrollable-content">
+                    <p> 
+                        Olá, sou a Psicóloga Fernanda, e é um prazer recebê-la neste espaço dedicado ao autocuidado e ao crescimento pessoal durante a jornada da maternidade. Com uma especialização em acompanhar mulheres durante a gravidez e na transição para a maternidade, meu objetivo é oferecer um suporte integral, ajudando-as a explorar e compreender suas emoções, desafios e fortalezas nesse período único da vida.
 
-Acredito firmemente no poder do autoconhecimento como uma ferramenta essencial para uma maternidade mais consciente e gratificante. Convido você a embarcar nesta jornada de descoberta pessoal, onde juntas poderemos explorar suas preocupações, medos e alegrias, enquanto construímos uma base sólida para uma maternidade mais equilibrada e significativa.
-
-Seja bem-vinda a este espaço seguro e acolhedor, onde o cuidado com você mesma é a prioridade. Estou aqui para apoiá-la em cada passo do caminho.
-                </button>   
+                        Acredito firmemente no poder do autoconhecimento como uma ferramenta essencial para uma maternidade mais consciente e gratificante. Convido você a embarcar nesta jornada de descoberta pessoal, onde juntas poderemos explorar suas preocupações, medos e alegrias, enquanto construímos uma base sólida para uma maternidade mais equilibrada e significativa.
+                        
+                        Seja bem-vinda a este espaço seguro e acolhedor, onde o cuidado com você mesma é a prioridade. Estou aqui para apoiá-la em cada passo do caminho.
+                    </p>
+                </div>
+            </div>
         </div>
-
-        <div class="intro">
-            <button class="img-luto" onclick="redirecionar3()">
+        <div id="popout3" class="popout-content">
+            <div class="popout-inner">
                 <img src="images/meno-pausa.jpeg" alt="">
-                <p>Olá! Sou a Psicóloga Bettina. 
-                    Como especialista em saúde mental das mulheres em fase da menopausa, estou aqui para oferecer um espaço seguro e acolhedor onde você pode explorar e processar suas experiências durante essa transição única em sua vida. A menopausa pode trazer uma série de desafios emocionais, desde flutuações de humor até questões de identidade e propósito.
-                    É importante compreender e reconhecer suas emoções neste momento. Os sintomas da menopausa podem variar amplamente de uma mulher para outra, incluindo ansiedade, depressão, problemas de sono e alterações de memória. Todas essas reações são válidas e merecem ser tratadas com compreensão e apoio.
-                    Meu objetivo é fornecer uma abordagem compassiva para ajudá-la a navegar por essa fase de sua vida com mais confiança e bem-estar. Ofereço terapia individualizada, adaptando-me às suas necessidades específicas e fornecendo um espaço seguro para você compartilhar suas preocupações e descobrir estratégias eficazes para lidar com elas.
-                    Estou disponível para encontros semanais, oferecendo um suporte contínuo e consistente ao longo de sua jornada de saúde mental durante a menopausa. Se você está pronta para dar o primeiro passo em direção ao seu bem-estar emocional, entre em contato comigo para agendar uma consulta. Estou aqui para apoiá-la em sua jornada de autodescoberta e empoderamento.</p>
-            </button>   
+                <div class="scrollable-content">
+                    <p>Olá! Sou a Psicóloga Bettina. 
+                        Como especialista em saúde mental das mulheres em fase da menopausa, estou aqui para oferecer um espaço seguro e acolhedor onde você pode explorar e processar suas experiências durante essa transição única em sua vida. A menopausa pode trazer uma série de desafios emocionais, desde flutuações de humor até questões de identidade e propósito.
+                        É importante compreender e reconhecer suas emoções neste momento. Os sintomas da menopausa podem variar amplamente de uma mulher para outra, incluindo ansiedade, depressão, problemas de sono e alterações de memória. Todas essas reações são válidas e merecem ser tratadas com compreensão e apoio.
+                        Meu objetivo é fornecer uma abordagem compassiva para ajudá-la a navegar por essa fase de sua vida com mais confiança e bem-estar. Ofereço terapia individualizada, adaptando-me às suas necessidades específicas e fornecendo um espaço seguro para você compartilhar suas preocupações e descobrir estratégias eficazes para lidar com elas.
+                        Estou disponível para encontros semanais, oferecendo um suporte contínuo e consistente ao longo de sua jornada de saúde mental durante a menopausa. Se você está pronta para dar o primeiro passo em direção ao seu bem-estar emocional, entre em contato comigo para agendar uma consulta. Estou aqui para apoiá-la em sua jornada de autodescoberta e empoderamento.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="popout4" class="popout-content">
+            <div class="popout-inner">
+                <img src="images/trauma.jpeg" alt="">
+                <div class="scrollable-content">
+                    <p>
+                        ainda sem texto
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="intro">
-            <button class="img-luto" onclick="redirecionar4()">
-                <img src="images/trauma.jpeg" alt="">
-                <p>O luto é um processo emocional de dor e adaptação que ocorre após a perda de alguém ou algo significativo. Ele envolve uma variedade de sentimentos, como tristeza, raiva e confusão, e é uma experiência única para cada indivíduo.</p>
-            </button>   
-        </div>
     </article>
 
     <script src="script.js"></script>
