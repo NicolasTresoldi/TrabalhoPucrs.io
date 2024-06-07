@@ -392,6 +392,14 @@ form button:hover {
         border-radius: 30px;
     }
 
+    .img-luto {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        margin: 10px; /* Espaçamento entre os botões */
+    }
+
     /* Estiliza o botão de fechar dentro do pop-out */
     .close-button {
         position: absolute;
