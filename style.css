@@ -391,6 +391,17 @@ form button:hover {
         max-height: 250px;
         border-radius: 30px;
     }
+
+    /* Estiliza o botão de fechar dentro do pop-out */
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px),
@@ -433,17 +444,6 @@ form button:hover {
         border-radius: 30px;
         margin-bottom: 10px;
     }
-
-    /* Estiliza o botão de pop-out */
-.popout-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin: 20px;
-}
 
 /* Conteúdo do pop-out (oculto por padrão) */
 .popout-content {
