@@ -199,7 +199,7 @@ button[type="submit"] {
 }
 
 form button:hover {
-    background-color: #b359b9;
+    background-color: #e09f8c;
 }
 
 #questions {
@@ -217,7 +217,7 @@ form button:hover {
 /* PERSONALIZAR BOTAO RESPONDER */
 
 .custom-reply-btn {
-    background-color: #ec6ee2;
+    background-color: #DDB6AA;
     color: white;
     padding: 7px 10px;
     border: none;
