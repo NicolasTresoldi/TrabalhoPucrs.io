@@ -140,59 +140,6 @@ nav {
     color: rgba(0, 0, 0, 0.671);
 }
 
-/* CSS INTEGRANTES */
-
-.containerIntegrantes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.item { 
-    display: flex;
-    padding: 20px;
-    margin: 0 10px;
-    align-items: center;
-    flex-direction: row;
-}
-
-#isa img {
-    width: 170px;
-    height: 180px;
-}
-
-#fernanda img {
-    width: 180px;
-    height: 190px;
-}
-
-#betina img {
-    width: 170px;
-    height: 190px;
-}
-
-#sara img {
-    width: 180px;
-    height: 190px;
-}
-
-.item:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-.item img { 
-    border-radius: 20px;
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.space {
-    margin-left: 170px;
-}
-
 /* CSS FORM */
 
 main {
@@ -235,7 +182,7 @@ form label, form input, form textarea {
 form button {
     border-radius: 15px;
     padding: 0.5rem 1rem;
-    background-color: #ec6ee2;
+    background-color: #DDB6AA;
     color: #fff;
     border: none;
     cursor: pointer;
